@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Riya Sharma - ECE Student & Future Embedded Systems Engineer based in Jaipur, India (originally from Nepal)." />
+  <title>Riya Sharma | ECE Student & Future Embedded Systems Engineer</title>
+  
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==============================================
+       NAVIGATION HEADER
+       ============================================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-name">Riya Sharma</span>
+        <span class="logo-sub">ECE Portfolio</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#pursuing" class="nav-link">Current Focus</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Toggle & Mobile Menu Button -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================
+         1. HERO / INTRO SECTION
+         ============================================== -->
+    <section class="section hero" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="origin-badge">
+            <span class="badge-icon">📍</span>
+            <span>Originally from <strong>Nepal</strong>, now living in <strong>Jaipur, India</strong></span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Riya Sharma</span>
+          </h1>
+
+          <p class="hero-tagline">
+            ECE Student <span class="divider">|</span> Future Embedded Systems Engineer
+          </p>
+
+          <p class="hero-intro">
+            Welcome to my personal corner on the web! I am a first-year Electronics and Communication Engineering 
+            student passionate about microcontrollers, hands-on hardware, and writing code that interacts with the real world. 
+            I love learning how silicon, circuits, and software connect.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get in Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#education" class="btn btn-secondary">View My Education</a>
+          </div>
+
+          <!-- Quick Stats / Highlights -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">1st</span>
+              <span class="stat-label">Year BTech ECE</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">25%</span>
+              <span class="stat-label">Merit Scholarship</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">JECRC</span>
+              <span class="stat-label">University, Jaipur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo Placeholder Frame -->
+        <!-- 
+          TIP FOR RIYA:
+          To use your own photo, place an image file (e.g. "profile.jpg") 
+          inside this folder and change the src below to: src="profile.jpg"
+        -->
+        <div class="hero-media">
+          <div class="photo-card">
+            <div class="photo-wrapper">
+              <img 
+                src="avatar-placeholder.svg" 
+                alt="Riya Sharma - Profile Placeholder" 
+                class="profile-img" 
+                id="profile-img"
+              />
+            </div>
+            <div class="photo-caption">
+              <span class="status-indicator"></span>
+              <span>Open to learning & future internships</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. HOBBIES & INTERESTS SECTION
+         ============================================== -->
+    <section class="section hobbies" id="hobbies">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Beyond the Circuit Board</span>
+          <h2 class="section-title">Hobbies & Interests</h2>
+          <p class="section-desc">
+            Before engineering formulas and lab circuits took center stage, these two passions shaped who I am, 
+            grounded my thinking, and taught me how to balance focus with freedom.
+          </p>
+        </div>
+
+        <div class="hobbies-grid">
+          <!-- Dancing Card -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap dance-theme">
+              <span class="hobby-icon">💃</span>
+            </div>
+            <div class="hobby-content">
+              <h3 class="hobby-title">Dancing</h3>
+              <span class="hobby-role">Creative Expression & Joy</span>
+              <p class="hobby-text">
+                Dancing has always been my natural way to express myself, let go of stress, and celebrate the moment. 
+                Whether practicing beats alone or moving to music with friends back home in Nepal, dance brings an 
+                instant burst of joy and keeps me in touch with my creative, spontaneous side.
+              </p>
+              <div class="hobby-tag">Expression & Rhythm</div>
+            </div>
+          </div>
+
+          <!-- Chess Card -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap chess-theme">
+              <span class="hobby-icon">♟️</span>
+            </div>
+            <div class="hobby-content">
+              <h3 class="hobby-title">Playing Chess</h3>
+              <span class="hobby-role">Strategy, Patience & Foresight</span>
+              <p class="hobby-text">
+                Chess taught me that every move carries a consequence. Sitting across the 64 squares taught me the value 
+                of quiet patience, remaining calm under uncertainty, and thinking three or four moves ahead. It is a 
+                mindset that naturally translates into debugging code and designing orderly systems.
+              </p>
+              <div class="hobby-tag">Strategic Thinking</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal quote box -->
+        <div class="personal-note">
+          <p class="quote-text">
+            “Dance reminds me to stay fluid and joyful; chess reminds me to think carefully before taking the next step.”
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. EDUCATION SECTION
+         ============================================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">
+            The academic milestones that built my curiosity in technology, mathematics, and electronics.
+          </p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- BTech ECE at JECRC University -->
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header-flex">
+                <div>
+                  <span class="badge badge-ongoing">Currently Pursuing · 1st Year</span>
+                  <h3 class="edu-degree">B.Tech in Electronics & Communication Engineering (ECE)</h3>
+                  <p class="edu-institute">JECRC University, Jaipur, Rajasthan, India</p>
+                </div>
+                <div class="edu-year">2026 – Present</div>
+              </div>
+              <p class="edu-details">
+                Pursuing my undergraduate degree with a deep focus on electronics fundamentals, engineering mathematics, 
+                programming concepts, and semiconductor logic.
+              </p>
+              <div class="scholarship-pill">
+                <span class="pill-star">🏆</span>
+                <span><strong>25% Merit Scholarship</strong> awarded in recognition of academic excellence.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Higher Secondary (+2) at Jeevan Jyoti -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-header-flex">
+                <div>
+                  <span class="badge badge-completed">Completed (+2)</span>
+                  <h3 class="edu-degree">Higher Secondary School (+2 Science)</h3>
+                  <p class="edu-institute">Jeevan Jyoti, Kohalpur, Banke, Nepal</p>
+                </div>
+                <div class="edu-year">Completed</div>
+              </div>
+              <p class="edu-details">
+                Built a solid foundation in physics, mathematics, and logical analysis. My schooling here in Nepal 
+                fostered the initial curiosity that inspired me to cross borders and pursue an engineering degree abroad.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. WHAT I'M PURSUING RIGHT NOW SECTION
+         ============================================== -->
+    <section class="section pursuing" id="pursuing">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Present Steps & Future Vision</span>
+          <h2 class="section-title">What I'm Pursuing Right Now</h2>
+          <p class="section-desc">
+            As a first-year student, I believe in building strong, reliable fundamentals today while keeping a clear, 
+            long-term vision in mind for tomorrow.
+          </p>
+        </div>
+
+        <div class="pursuing-grid">
+          
+          <!-- Current Skills & Learning Block -->
+          <div class="pursuing-card current-learning">
+            <div class="card-top-icon">⚡</div>
+            <h3>What I'm Learning Today</h3>
+            <p class="card-subtext">
+              I spend my time outside regular lectures diving into core technical skills through documentation, 
+              hands-on tinkering, and practice:
+            </p>
+
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-name">C Programming</span>
+                <span class="skill-desc">Understanding memory, pointers, and structured low-level syntax essential for microcontrollers.</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Arduino & Microcontrollers</span>
+                <span class="skill-desc">Connecting simple sensors, LEDs, and understanding input/output pins and digital signals.</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-desc">Version control basics, commit workflows, and organizing code repositories cleanly.</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Python Basics</span>
+                <span class="skill-desc">Learning logic scripting, data structures, and automation fundamentals.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Long-Term Goal & Career Roadmap -->
+          <div class="pursuing-card future-roadmap">
+            <div class="card-top-icon">🎯</div>
+            <h3>My Long-Term Roadmap</h3>
+            <p class="card-subtext">
+              A transparent look at where I want to take my engineering career over the next few years:
+            </p>
+
+            <div class="roadmap-steps">
+              <div class="roadmap-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Undergraduate Mastery</h4>
+                  <p>Excel in BTech ECE coursework, build hands-on embedded prototypes, and publish reproducible projects.</p>
+                </div>
+              </div>
+
+              <div class="roadmap-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>Core Industry Internships</h4>
+                  <p>Secure specialized internships in embedded systems, firmware, or semiconductor technology from second year onward.</p>
+                </div>
+              </div>
+
+              <div class="roadmap-step highlight-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>MS in Embedded Systems (Germany) 🇩🇪</h4>
+                  <p>Pursue higher studies in Germany to learn world-class embedded hardware, automotive electronics, and real-time systems.</p>
+                </div>
+              </div>
+
+              <div class="roadmap-step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h4>Global Experience & Return to India 🇮🇳</h4>
+                  <p>Work for a few years in Europe's cutting-edge engineering sector, then bring that experience and leadership back to India's growing semiconductor ecosystem.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. EXPERIENCE & PROJECTS SECTION
+         ============================================== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Work & Projects</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-desc">
+            Honest about where I am: I am at the very start of my engineering path, dedicating time to self-study 
+            and hands-on fundamentals before taking on formal roles.
+          </p>
+        </div>
+
+        <div class="experience-overview">
+          <div class="experience-philosophy">
+            <div class="philosophy-icon">🌱</div>
+            <div>
+              <h3>Building from the ground up</h3>
+              <p>
+                I am actively building my practical skills through continuous self-study, lab coursework, and small beginner projects. 
+                My focus right now is learning the "why" behind circuits and code so that I'm fully prepared for 
+                <strong>embedded systems and semiconductor internships</strong> starting from my second year onward.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Coming Soon Card -->
+        <div class="projects-section-header">
+          <h3 class="subsection-title">Projects Showcase</h3>
+          <span class="badge badge-ongoing">Under Development</span>
+        </div>
+
+        <div class="projects-grid">
+          
+          <div class="project-card coming-soon">
+            <div class="coming-soon-badge">
+              <span class="pulse-dot"></span>
+              <span>Projects Coming Soon</span>
+            </div>
+            <h4 class="project-title">Embedded & C Programming Mini-Projects</h4>
+            <p class="project-desc">
+              Currently working on beginner experiments involving sensor reading with Arduino, serial communication, 
+              and small algorithmic utilities in C. As soon as they are tested and documented, I will link live code 
+              and circuit schematics right here.
+            </p>
+            
+            <div class="project-tags">
+              <span class="tech-tag">C Language</span>
+              <span class="tech-tag">Arduino UNO</span>
+              <span class="tech-tag">Sensors & Breadboards</span>
+              <span class="tech-tag">GitHub</span>
+            </div>
+
+            <div class="card-footer-note">
+              <span>💡 New projects will be uploaded here as they are completed.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. CONTACT SECTION
+         ============================================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">
+            Whether you'd like to talk about embedded systems, study opportunities, chess, or just say hello, 
+            my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-cards-grid">
+            
+            <!-- Email -->
+            <a href="mailto:riya.sharma@example.com" class="contact-card">
+              <div class="contact-icon email-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Email Me</span>
+                <span class="contact-value">riya.sharma@example.com</span>
+              </div>
+              <span class="arrow-indicator">→</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/riyasharma" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon linkedin-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/riyasharma</span>
+              </div>
+              <span class="arrow-indicator">→</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/riyasharma" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon github-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/riyasharma</span>
+              </div>
+              <span class="arrow-indicator">→</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/riya.sharma" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon instagram-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div class="contact-text">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@riya.sharma</span>
+              </div>
+              <span class="arrow-indicator">→</span>
+            </a>
+
+          </div>
+
+          <!-- Quick Copy Email Feature -->
+          <div class="copy-email-box">
+            <span class="copy-title">Quick Action:</span>
+            <div class="copy-input-group">
+              <input type="text" id="email-address-text" value="riya.sharma@example.com" readonly />
+              <button id="copy-email-btn" class="btn btn-secondary">
+                <span id="copy-btn-text">Copy Email</span>
+              </button>
+            </div>
+            <span id="copy-alert" class="copy-alert">Copied to clipboard! ✓</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-title">Riya Sharma</p>
+        <p class="footer-sub">First-Year BTech ECE Student · JECRC University, Jaipur</p>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-credits">
+          Designed with clean HTML, CSS & JavaScript · Hosted with ❤️
+        </p>
+        <p class="copyright">&copy; <span id="current-year">2026</span> Riya Sharma. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
